@@ -3,6 +3,7 @@
 FILE=~/rsID2Bed/snp147Common.bed
 DIR=~/rsID2Bed
 SNPS=$(pwd)/$1
+echo Proccesing file:
 echo $SNPS 
 
 #check if working folder exist, if not, create
