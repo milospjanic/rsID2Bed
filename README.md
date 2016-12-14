@@ -23,6 +23,7 @@ chr1	13117	13118	rs62028691
 chr1	13272	13273	rs531730856
 chr1	13417	13417	rs777038595
 chr1	14463	14464	rs546169444
+
 mpjanic@zoran:~/rsID2Bed$ wc -l snp147Common.bed 
 14815821 snp147Common.bed
 </pre>
