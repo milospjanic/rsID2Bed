@@ -22,4 +22,4 @@ mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A -N -D hg19 -e 'SELECT ch
 fi
 
 #find positions of snps from the input list by comparing to snpdb
-awk 'NR==FNR {h[$1] = 1; next} {if(h[$4]==1) print$0}' $SNPS snp147Common.head.bed > $1.bed
+awk 'NR==FNR {h[$1] = 1; next} {if(h[$4]==1) print$0}' $SNPS snp147Common.bed > $1.bed
