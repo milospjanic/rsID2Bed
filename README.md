@@ -18,3 +18,22 @@ chmod 775 rsID2Bed.sh
 ./rsID2Bed.sh path/to/file
 </pre>
 
+**Example**
+
+<pre> 
+cat SNP.file
+rs376643643
+rs373328635
+rs376007522
+rs368469931
+rs144773400
+rs375931351
+rs371194064
+rs201752861
+rs367896724
+rs201694901
+
+./rsID2Bed.sh SNP.file
+
+cat SNP.file.bed
+
