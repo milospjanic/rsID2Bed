@@ -8,11 +8,13 @@ This script will check if the working folder is present and if not it will creat
 
 Next an akw code will perform comparison and output bed file for your input snps and save it as $1.bed, $1 being first parameter provided to the script that should be the file name containing SNPs.
 
+Output file will be placed in ~/rsID2Bed
+
 **Running**
 
 To run the script type:
 <pre>
 chmod 775 rsID2Bed.sh 
-./rsID2Bed.sh snp.file.name
+./rsID2Bed.sh path/to/file
 </pre>
 
