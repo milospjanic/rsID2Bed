@@ -1,7 +1,9 @@
 #!/bin/bash
 
-FILE=~/rsID2Bed/snp149Common.bed
+FILE=~/rsID2Bed/snp147Common.bed
 DIR=~/rsID2Bed
+SNPS=$(pwd)/$1
+echo $SNPS 
 
 #check if working folder exist, if not, create
 
@@ -20,6 +22,4 @@ mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A -N -D hg19 -e 'SELECT ch
 fi
 
 #find positions of snps from the input list by comparing to snpdb
-
-awk -F " " 'BEGIN{while(getline<"$1") a[$1]=1 } ; a[$4] ==1 {print $0 } ' snp138_short.txt > $1.bed
-
+awk 'NR==FNR {h[$1] = 1; next} {if(h[$4]==1) print$0}' $SNPS snp147Common.head.bed > $1.bed
