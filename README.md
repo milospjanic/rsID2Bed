@@ -10,6 +10,23 @@ Next an akw code will perform comparison and output bed file for your input snps
 
 Output file will be placed in ~/rsID2Bed
 
+MySQL download will produce a file snp147Common.bed, with 14,815,821 SNPs:
+<pre>
+head snp147Common.bed
+chr1	10177	10177	rs367896724
+chr1	10352	10352	rs555500075
+chr1	11007	11008	rs575272151
+chr1	11011	11012	rs544419019
+chr1	13109	13110	rs540538026
+chr1	13115	13116	rs62635286
+chr1	13117	13118	rs62028691
+chr1	13272	13273	rs531730856
+chr1	13417	13417	rs777038595
+chr1	14463	14464	rs546169444
+mpjanic@zoran:~/rsID2Bed$ wc -l snp147Common.bed 
+14815821 snp147Common.bed
+</pre>
+
 **Running**
 
 To run the script type:
