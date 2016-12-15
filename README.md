@@ -4,7 +4,9 @@ rsID2Bed is a script to convert SNP rsIDs to a list of genomics positions in a b
 
 **Usage**
 
-This script will check if the working folder is present and if not it will create ~/rsID2Bed. Next, script will go into ~/rsID2Bed and check if dbSNP bed file for human genome hg19 is present or not, version 147 (the latest one present in the mySQL database currently), and case it is not present it will download it using mySQL from snp147Common table of hg19 dataset on genome-mysql.cse.ucsc.edu.
+This script will check if the working folder ~/rsID2Bed is present and if not it will create ~/rsID2Bed. Next, script will go into ~/rsID2Bed and check if dbSNP bed file for human genome hg19 is present or not, version 147 (the latest one present in the mySQL database currently), and case it is not present it will download it using mySQL from snp147Common table of hg19 dataset on genome-mysql.cse.ucsc.edu.
+
+**Note - Script rsID2Bed.sh can be placed anywhere as well as the input file, however output will be in ~/rsID2Bed **
 
 Next an akw code will perform comparison and output bed file for your input snps and save it as $1.bed, $1 being first parameter provided to the script that should be the file name containing SNPs.
 
