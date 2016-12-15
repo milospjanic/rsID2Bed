@@ -36,6 +36,10 @@ chmod 775 rsID2Bed.sh
 ./rsID2Bed.sh path/to/file
 </pre>
 
+**Prerequisites**
+
+MySQL
+
 **Example**
 
 <pre> 
